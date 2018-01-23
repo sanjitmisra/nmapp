@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
 	 
 	<!-- include custom CSS -->
-	<link rel="stylesheet" href="app/assets/css/custom.css" />
+	<link rel="stylesheet" href="ui/assets/css/custom.css" />
 </head>
 <body>
  
@@ -23,7 +23,10 @@
 	<div class="container" ng-app="myApp">
 	 
 	    <!-- read products template -->
-	    <ng-include src="'./app/products/read_products.template.html'"></ng-include>
+	    <ng-include src="'ui/products/read_products.template.html'"> </ng-include>
+	     
+	    <!--    <div flex="10"></div> -->
+	    
 	 
 	</div> <!-- end container -->
  
@@ -43,13 +46,13 @@
 
 	<!-- Applicaiton Specific Scripts -->
 	<!-- app -->
-	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="ui/app.js"></script>
 	 
 	<!-- products controller -->
-	<script type="text/javascript" src="app/products/products.controller.js"></script>
+	<script type="text/javascript" src="ui/products/products.controller.js"></script>
 	 
 	<!-- products factory -->
-	<script type="text/javascript" src="app/products/products.factory.js"></script>
+	<script type="text/javascript" src="ui/products/products.factory.js"></script>
 </body>
 
 
