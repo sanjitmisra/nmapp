@@ -26,6 +26,41 @@ app.controller('productsController', function($scope, $mdDialog, $mdToast, produ
         });
     }
      
+    $scope.createProduct = function(){
+        productsFactory.createProducts($scope).then(function successCallback(response){
+
+            //Show success message
+            $scope.showToast(response.data.message);
+
+            $scope.readProducts();
+
+            $scope.cancel();
+
+            $scope.clearProductForm();
+        
+        }, function errorCallback(response){
+            $scope.showToast("Error creating product!");
+        });
+    }
+    
+
+    // Clear Product Form
+    $scope.clearProductForm = function(){
+        $scope.id="";
+        $scope.name ="";
+        $scope.description = "";
+        $scope.price = "";
+    }
+
+    // Toast Message
+    $scope.showToast = function(message){
+        $mdToast.show(
+            .textContent(message)
+            .hideDelay(3000)
+            .position("top right")
+            );
+    }
+
     // DialogController will be here
     function DialogController($scope, $mdDialog) {
         $scope.cancel = function() {
