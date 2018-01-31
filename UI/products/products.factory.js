@@ -22,9 +22,9 @@ app.factory("productsFactory", function($http){
             },
             url: 'http://localhost/fullapp/api/product/create.php'
         });
-        
+
     };
      
     return factory;
-    }
+    })
 });

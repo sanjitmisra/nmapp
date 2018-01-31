@@ -55,6 +55,7 @@ app.controller('productsController', function($scope, $mdDialog, $mdToast, produ
     // Toast Message
     $scope.showToast = function(message){
         $mdToast.show(
+            $mdToast.simple()
             .textContent(message)
             .hideDelay(3000)
             .position("top right")
