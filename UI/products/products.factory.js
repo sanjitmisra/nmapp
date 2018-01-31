@@ -26,5 +26,4 @@ app.factory("productsFactory", function($http){
     };
      
     return factory;
-    })
-});
+    });
