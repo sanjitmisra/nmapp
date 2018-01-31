@@ -4,7 +4,7 @@ class Database
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
     private $host = $url["host"];
-    private $db_name = "api_db";
+    private $db_name = "heroku_7a0450a60ed2019";
     private $username = $url["user"];
     private $password = $url["pass"];
 
