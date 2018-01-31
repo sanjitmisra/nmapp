@@ -20,7 +20,7 @@ app.factory("productsFactory", function($http){
                 'price': $scope.price,
                 'category_id': 1
             },
-            url: 'http://localhost/fullapp/api/product/create.php'
+            url: 'https://morning-brook-16204.herokuapp.com/API/product/create.php'
         });
 
     };
