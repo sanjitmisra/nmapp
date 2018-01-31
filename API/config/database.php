@@ -17,7 +17,7 @@ class Database
         $host = $url["host"];
         $db_name = "heroku_7a0450a60ed2019";
         $username = $url["user"];//'b9c719809cfc04';
-        $password = $url["pass"];//'a74d38f82287056';
+        $password = 'a74d38f82287056';
 
         $this->conn = null;
  
