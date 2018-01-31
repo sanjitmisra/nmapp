@@ -1,13 +1,7 @@
 <?php
 class Database
 {
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-    private $host = $url["host"];
-    private $db_name = "heroku_7a0450a60ed2019";
-    private $username = 'b9c719809cfc04';
-    private $password = 'a74d38f82287056';
-
+    
 	/* Changes to implement Heroku Deploy
     private $host = "";
 	private $db_name = "api_db";
@@ -19,6 +13,12 @@ class Database
     // get the database connection
     public function getConnection()
     { 
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+        $host = $url["host"];
+        $db_name = "heroku_7a0450a60ed2019";
+        $username = 'b9c719809cfc04';
+        $password = 'a74d38f82287056';
+
         $this->conn = null;
  
         try
