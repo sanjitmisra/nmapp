@@ -16,8 +16,8 @@ class Database
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
         $host = $url["host"];
         $db_name = "heroku_7a0450a60ed2019";
-        $username = 'b9c719809cfc04';
-        $password = 'a74d38f82287056';
+        $username = $url["user"]//'b9c719809cfc04';
+        $password = $url["pass"]'a74d38f82287056';
 
         $this->conn = null;
  

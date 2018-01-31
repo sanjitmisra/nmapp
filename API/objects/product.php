@@ -18,6 +18,7 @@ class Product{
     public function __construct($db)
     {
         $this->conn = $db;
+        echo "DB Conn = " . $db;
     }
 
     // read products
