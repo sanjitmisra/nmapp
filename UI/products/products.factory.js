@@ -6,7 +6,7 @@ app.factory("productsFactory", function($http){
     factory.readProducts = function(){
         return $http({
             method: 'GET',
-            url: 'http://localhost/fullapp/api/product/read.php'
+            url: 'https://morning-brook-16204.herokuapp.com/API/product/read.php'
         });
     };
      
