@@ -5,8 +5,8 @@ class Database
 
     private $host = $url["host"];
     private $db_name = "heroku_7a0450a60ed2019";
-    private $username = $url["user"];
-    private $password = $url["pass"];
+    private $username = 'b9c719809cfc04';
+    private $password = 'a74d38f82287056';
 
 	/* Changes to implement Heroku Deploy
     private $host = "";
