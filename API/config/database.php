@@ -1,10 +1,19 @@
 <?php
 class Database
 {
-	private $host = "";
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+    private $host = $url["host"];
+    private $db_name = "api_db";
+    private $username = $url["user"];
+    private $password = $url["pass"];
+
+	/* Changes to implement Heroku Deploy
+    private $host = "";
 	private $db_name = "api_db";
     private $username = "root";
     private $password = "";
+    */
     public $conn;
  
     // get the database connection
